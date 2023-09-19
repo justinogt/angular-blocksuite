@@ -3,7 +3,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    /* INFO: With this properties I can run the project but the blocksuite dont work correctly */
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
   },
   "files": [
     "src/main.ts"

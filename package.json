@@ -18,6 +18,10 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@blocksuite/block-std": "^0.8.0",
+    "@blocksuite/editor": "^0.8.0",
+    "@blocksuite/lit": "^0.8.0",
+    "@toeverything/theme": "^0.7.16",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
