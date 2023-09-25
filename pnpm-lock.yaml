@@ -30,14 +30,14 @@ dependencies:
     specifier: ^16.2.0
     version: 16.2.6(@angular/common@16.2.6)(@angular/core@16.2.6)(@angular/platform-browser@16.2.6)(rxjs@7.8.1)
   '@blocksuite/block-std':
-    specifier: ^0.8.0
-    version: 0.8.0(@blocksuite/store@0.8.0)(lit@2.8.0)
+    specifier: 0.0.0-20230924223737-8993bc0f-nightly
+    version: 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)
   '@blocksuite/editor':
-    specifier: ^0.8.0
-    version: 0.8.0(@blocksuite/blocks@0.8.0)(@blocksuite/lit@0.8.0)(@blocksuite/store@0.8.0)(@toeverything/theme@0.7.16)
+    specifier: 0.0.0-20230924223737-8993bc0f-nightly
+    version: 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/blocks@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/lit@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(@toeverything/theme@0.7.16)
   '@blocksuite/lit':
-    specifier: ^0.8.0
-    version: 0.8.0(@blocksuite/block-std@0.8.0)(@blocksuite/store@0.8.0)(yjs@13.6.8)
+    specifier: 0.0.0-20230924223737-8993bc0f-nightly
+    version: 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(yjs@13.6.8)
   '@toeverything/theme':
     specifier: ^0.7.16
     version: 0.7.16
@@ -1739,126 +1739,105 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@blocksuite/block-std@0.8.0(@blocksuite/store@0.8.0)(lit@2.8.0):
-    resolution: {integrity: sha512-hUO9PTbuZzrauaYOQgHDHkRnoRQ7DcJc7TlWVgKh1H8M6Pmb1iGzQ38tcbt9+hCkRdLQnZWAc4IU4SJpd372Fw==}
+  /@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly):
+    resolution: {integrity: sha512-1AzpSqrjSnOHkWjOo84BrutksGNJJcShrkEYaeQEj+nIijKJkMK74QxHiy8JcIF3dTLx0Xkzsanj9fB+K0YSxw==}
     peerDependencies:
-      '@blocksuite/store': 0.8.0
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly
     dependencies:
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
-      '@blocksuite/store': 0.8.0(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/global': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
+      lz-string: 1.5.0
       w3c-keyname: 2.2.8
-    transitivePeerDependencies:
-      - lit
+      zod: 3.22.2
     dev: false
 
-  /@blocksuite/blocks@0.8.0(@blocksuite/block-std@0.8.0)(@blocksuite/lit@0.8.0)(@blocksuite/store@0.8.0)(@toeverything/theme@0.7.16)(nanoid@4.0.2)(yjs@13.6.8):
-    resolution: {integrity: sha512-bDO9OWYVRBcJYDibq8i7Aqdf1nB98Nu0QduNSZEGOeXw2mRLnFD0mFYQ+PynXtUpByVGdXQBistsEXnNPMpQBA==}
+  /@blocksuite/blocks@0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/lit@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(@toeverything/theme@0.7.16)(nanoid@4.0.2)(yjs@13.6.8):
+    resolution: {integrity: sha512-jeFSipXfYgSZG4RLqLtk7zz+Ta3hRSobDo/xo3iSuKg9A2W3n+FrUYifxzCvoWQnCrrs7wX9ASqwF9+XJnVUtQ==}
     peerDependencies:
-      '@blocksuite/block-std': 0.8.0
-      '@blocksuite/lit': 0.8.0
-      '@blocksuite/store': 0.8.0
-      '@toeverything/theme': ^0.7.13
-      yjs: ^13
+      '@blocksuite/block-std': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/lit': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly
+      '@toeverything/theme': ^0.7.16
+      nanoid: ^4
     dependencies:
-      '@blocksuite/block-std': 0.8.0(@blocksuite/store@0.8.0)(lit@2.8.0)
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
-      '@blocksuite/lit': 0.8.0(@blocksuite/block-std@0.8.0)(@blocksuite/store@0.8.0)(yjs@13.6.8)
-      '@blocksuite/phasor': 0.8.0(lit@2.8.0)(nanoid@4.0.2)(yjs@13.6.8)
-      '@blocksuite/store': 0.8.0(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
-      '@blocksuite/virgo': 0.8.0(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/block-std': 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)
+      '@blocksuite/global': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/lit': 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(yjs@13.6.8)
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/virgo': 0.0.0-20230924223737-8993bc0f-nightly(lit@2.8.0)(yjs@13.6.8)
       '@floating-ui/dom': 1.5.3
       '@toeverything/theme': 0.7.16
       '@types/webfontloader': 1.6.35
       buffer: 6.0.3
       date-fns: 2.30.0
       file-type: 16.5.4
+      fractional-indexing: 3.2.0
       html2canvas: 1.4.1
       jszip: 3.10.1
       lit: 2.8.0
       marked: 4.3.0
+      nanoid: 4.0.2
       pdf-lib: 1.17.1
       shiki: 0.14.4
       sortablejs: 1.15.0
-      turndown: 7.1.2
       webfontloader: 1.6.28
-      yjs: 13.6.8
       zod: 3.22.2
     transitivePeerDependencies:
-      - nanoid
+      - yjs
     dev: false
 
-  /@blocksuite/editor@0.8.0(@blocksuite/blocks@0.8.0)(@blocksuite/lit@0.8.0)(@blocksuite/store@0.8.0)(@toeverything/theme@0.7.16):
-    resolution: {integrity: sha512-kNOSgNDeU7uGiBfXQoGobKNhZCmAEuIXsYJTwXwpmOIWlJ+gbM2YkX+4uSEeR14fN5LZTgQGaGy8QEgYYLcwRg==}
+  /@blocksuite/editor@0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/blocks@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/lit@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(@toeverything/theme@0.7.16):
+    resolution: {integrity: sha512-3JVfxmRiTnuIFfh+3gTgGECYEQ6h2eKtzYivkhGIFZUCP0FFD1+g8d1e997xsx0ulcfICni80iYhm2dDSBP2IQ==}
     peerDependencies:
-      '@blocksuite/blocks': 0.8.0
-      '@blocksuite/lit': 0.8.0
-      '@blocksuite/store': 0.8.0
-      '@toeverything/theme': ^0.7.13
+      '@blocksuite/blocks': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/lit': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly
+      '@toeverything/theme': ^0.7.16
     dependencies:
-      '@blocksuite/blocks': 0.8.0(@blocksuite/block-std@0.8.0)(@blocksuite/lit@0.8.0)(@blocksuite/store@0.8.0)(@toeverything/theme@0.7.16)(nanoid@4.0.2)(yjs@13.6.8)
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
-      '@blocksuite/lit': 0.8.0(@blocksuite/block-std@0.8.0)(@blocksuite/store@0.8.0)(yjs@13.6.8)
-      '@blocksuite/store': 0.8.0(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/blocks': 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/lit@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(@toeverything/theme@0.7.16)(nanoid@4.0.2)(yjs@13.6.8)
+      '@blocksuite/global': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/lit': 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(yjs@13.6.8)
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
       '@toeverything/theme': 0.7.16
       lit: 2.8.0
     dev: false
 
-  /@blocksuite/global@0.8.0(lit@2.8.0):
-    resolution: {integrity: sha512-1ZHRtZBeL3+HxHbFL39Np50yq7W+pQiQ/YTlUdBPhOyXo2HkKB0o54h5YO7AsozUUEu3oD2FvcBSAZwL/zeYpw==}
-    peerDependencies:
-      lit: ^2.7
-    peerDependenciesMeta:
-      lit:
-        optional: true
+  /@blocksuite/global@0.0.0-20230924223737-8993bc0f-nightly:
+    resolution: {integrity: sha512-SQXgV5Bna8SaKCRnzInfyZHOySmn6sVCh5RpXgBqNLtabQKZXgYINVzwF95l6h6LKt7GJSLP1VD1p7D6tdImiQ==}
     dependencies:
       ansi-colors: 4.1.3
-      lit: 2.8.0
       zod: 3.22.2
     dev: false
 
-  /@blocksuite/lit@0.8.0(@blocksuite/block-std@0.8.0)(@blocksuite/store@0.8.0)(yjs@13.6.8):
-    resolution: {integrity: sha512-SRAyVJwrBXysXh6HKExsBSullEgQVbYj7zPTQCW1c3AQ2yCEWEYrAbQHpgL5mCs9MJA/jDk+nWHNKN2G2qU60w==}
+  /@blocksuite/lit@0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/block-std@0.0.0-20230924223737-8993bc0f-nightly)(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)(yjs@13.6.8):
+    resolution: {integrity: sha512-GwthMjUSvlWhVReNOjL/kJBrczTLhYx1HxUKWPL8WdXHGe1fmD7gwqZZQMc4KBoa9I7/riAO6gL/zEIAagTvxA==}
     peerDependencies:
-      '@blocksuite/block-std': 0.8.0
-      '@blocksuite/store': 0.8.0
+      '@blocksuite/block-std': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly
     dependencies:
-      '@blocksuite/block-std': 0.8.0(@blocksuite/store@0.8.0)(lit@2.8.0)
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
-      '@blocksuite/store': 0.8.0(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
-      '@blocksuite/virgo': 0.8.0(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/block-std': 0.0.0-20230924223737-8993bc0f-nightly(@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly)
+      '@blocksuite/global': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/store': 0.0.0-20230924223737-8993bc0f-nightly(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/virgo': 0.0.0-20230924223737-8993bc0f-nightly(lit@2.8.0)(yjs@13.6.8)
       lit: 2.8.0
     transitivePeerDependencies:
       - yjs
     dev: false
 
-  /@blocksuite/phasor@0.8.0(lit@2.8.0)(nanoid@4.0.2)(yjs@13.6.8):
-    resolution: {integrity: sha512-Xl22b2iWoKOM82+CGI4zFIjyqqWZPK+IQPEYcKh7pzvPEKbL4y6JhSAaFTo5tstZfVEYpq/LPP/99ezQYoGwXA==}
-    peerDependencies:
-      nanoid: ^4
-      yjs: ^13
-    dependencies:
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
-      fractional-indexing: 3.2.0
-      nanoid: 4.0.2
-      yjs: 13.6.8
-    transitivePeerDependencies:
-      - lit
-    dev: false
-
-  /@blocksuite/store@0.8.0(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8):
-    resolution: {integrity: sha512-mm/tOT1eKduUo30zt1jHYLkPjgwEQgxunI0eG6/RKfBCAJrUXkhZW7H0aDn49aYlt2zLjdQPV6tt1fGgSKpr/Q==}
+  /@blocksuite/store@0.0.0-20230924223737-8993bc0f-nightly(async-call-rpc@6.3.1)(lit@2.8.0)(yjs@13.6.8):
+    resolution: {integrity: sha512-tXhtgj+o9SJv8v+bqF3F7koYpIYaJv9O+wI8tYJszdRGrx25OqURssHQnRAu8c+D83krA+CaVk04fKlE7HuzUQ==}
     peerDependencies:
       async-call-rpc: ^6
       yjs: ^13
     dependencies:
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
-      '@blocksuite/virgo': 0.8.0(lit@2.8.0)(yjs@13.6.8)
+      '@blocksuite/global': 0.0.0-20230924223737-8993bc0f-nightly
+      '@blocksuite/virgo': 0.0.0-20230924223737-8993bc0f-nightly(lit@2.8.0)(yjs@13.6.8)
       '@types/flexsearch': 0.7.4
       async-call-rpc: 6.3.1
       buffer: 6.0.3
       flexsearch: 0.7.21
       idb-keyval: 6.2.1
-      ky: 0.33.3
+      jszip: 3.10.1
       lib0: 0.2.85
       merge: 2.1.1
       minimatch: 9.0.3
@@ -1870,13 +1849,13 @@ packages:
       - lit
     dev: false
 
-  /@blocksuite/virgo@0.8.0(lit@2.8.0)(yjs@13.6.8):
-    resolution: {integrity: sha512-/17iXgvqAYCiwjJKTQPRMQgsjLSp3AM2O0otx0mexjN4fhgDb0nB2JYhqo6XgUBrZctgPUK7hHBbeWHz2zot+w==}
+  /@blocksuite/virgo@0.0.0-20230924223737-8993bc0f-nightly(lit@2.8.0)(yjs@13.6.8):
+    resolution: {integrity: sha512-8uI7lJFOxo/ccKv9DfsjcXDmh9JbqQoUz75JsdDzyMyzMtQFK2tG/ZeJP4LC7ANvs4ah+/ZmMzhe4ExNRvW9iA==}
     peerDependencies:
       lit: ^2.7
       yjs: ^13
     dependencies:
-      '@blocksuite/global': 0.8.0(lit@2.8.0)
+      '@blocksuite/global': 0.0.0-20230924223737-8993bc0f-nightly
       lit: 2.8.0
       yjs: 13.6.8
       zod: 3.22.2
@@ -3700,10 +3679,6 @@ packages:
       domelementtype: 2.3.0
     dev: true
 
-  /domino@2.1.6:
-    resolution: {integrity: sha512-3VdM/SXBZX2omc9JF9nOPCtDaYQ67BGp5CoLpIQlO2KCAPETs8TcDHacF26jXadGbvUteZzRTeos2fhID5+ucQ==}
-    dev: false
-
   /domutils@3.1.0:
     resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
     dependencies:
@@ -5059,11 +5034,6 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /ky@0.33.3:
-    resolution: {integrity: sha512-CasD9OCEQSFIam2U8efFK81Yeg8vNMTBUqtMOHlrcWQHqUX3HeCl9Dr31u4toV7emlH8Mymk5+9p0lL6mKb/Xw==}
-    engines: {node: '>=14.16'}
-    dev: false
-
   /launch-editor@2.6.0:
     resolution: {integrity: sha512-JpDCcQnyAAzZZaZ7vEiSqL690w7dAEyLao+KC96zBplnYbJS7TYNjvM3M7y3dGz+v7aIsJk3hllWuc0kWAjyRQ==}
     dependencies:
@@ -5241,6 +5211,11 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
     dev: true
+
+  /lz-string@1.5.0:
+    resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
+    hasBin: true
+    dev: false
 
   /magic-string@0.30.1:
     resolution: {integrity: sha512-mbVKXPmS0z0G4XqFDCTllmDQ6coZzn94aMlb0o/A4HEHJCKcanlDZwYJgwnkmgD3jyWhUgj9VsPrfd972yPffA==}
@@ -7088,12 +7063,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /turndown@7.1.2:
-    resolution: {integrity: sha512-ntI9R7fcUKjqBP6QU8rBK2Ehyt8LAzt3UBT9JR9tgo6GtuKvyUzpayWmeMKJw1DPdXzktvtIT8m2mVXz+bL/Qg==}
-    dependencies:
-      domino: 2.1.6
-    dev: false
 
   /type-fest@0.21.3:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
